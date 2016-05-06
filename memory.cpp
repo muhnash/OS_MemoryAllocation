@@ -14,7 +14,6 @@ bool higher_address(Entity a,Entity b)
         return false;
 }
 
-
 Memory::Memory(QList<Entity> holes)
 {
     if(holes.empty()) return;

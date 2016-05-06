@@ -11,11 +11,9 @@ private:
     QList<Entity> mem;
 public:
     Memory(QList<Entity> holes);
-    void add_entity(Entity x);
     void remove_entity(QString s);
    //-------
-    void print();
-    void print_n_entities();
+
 
 };
 
