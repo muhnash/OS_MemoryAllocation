@@ -39,3 +39,4 @@ int Entity::get_size()
 {
     return size;
 }
+

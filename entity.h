@@ -6,7 +6,7 @@ class Entity
 {
 private:
     bool type=false; // true: Process , false: Hole
-    QString name;
+    QString name="HOLE";
     int base_address;
     int size;
 
@@ -21,5 +21,7 @@ public:
     QString get_name();
     int get_base_address();
     int get_size();
+
+    //bool higher_address(Entity x);
 };
 #endif // ENTITY_H
