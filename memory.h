@@ -10,9 +10,13 @@ class Memory
 private:
     QList<Entity> mem;
 public:
-    Memory();
-   // void add_entity(Entity x);
+    Memory(QList<Entity> holes);
+    void add_entity(Entity x);
     void remove_entity(QString s);
+   //-------
+    void print();
+    void print_n_entities();
+
 };
 
 #endif // MEMORY_H
