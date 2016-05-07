@@ -13,6 +13,7 @@ void Allocation::FirstFit(Memory &m ,Entity x)
             // perfect hole !! same size & same base address .. just change type and name
             it->set_type(true);
             it->set_name(x.get_name());
+            break;
         }
         else
         {
@@ -26,7 +27,7 @@ void Allocation::FirstFit(Memory &m ,Entity x)
             it->set_type(true);
             it->set_name(x.get_name());
             it->set_size(x.get_size());
-
+            break;
         }
     }
 
