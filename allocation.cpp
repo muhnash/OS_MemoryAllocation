@@ -3,7 +3,7 @@
 
 void FirstFit(Entity x)
 {
-    QList<Entity>::iterator it=Memory.mem.begin();
+   /* QList<Entity>::iterator it=Memory.mem.begin();
     for(;it != mem.end();++it)
     {
         if(it->get_type() || it->get_size() < x.get_size() ) continue;  //skip processes & small holes
@@ -30,5 +30,5 @@ void FirstFit(Entity x)
         }
     }
 
-
+*/
 }
