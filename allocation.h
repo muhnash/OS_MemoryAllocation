@@ -10,6 +10,6 @@ class Allocation
 public:
     void FirstFit(Memory &m,Entity x);
     void BestFit(Entity x);
-    void WorstFit(Entity x);
+    void WorstFit(Memory &m,Entity x);
 };
 #endif // ALLOCATION_H

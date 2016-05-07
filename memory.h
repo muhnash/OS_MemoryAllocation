@@ -14,8 +14,7 @@ public:
     Memory(QList<Entity> holes);
     void remove_entity(QString s);
    //-------
-    friend class allocation;
-    friend void FirstFit(Memory &m ,Entity x);
+    friend class Allocation;
 
 };
 

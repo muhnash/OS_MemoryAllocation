@@ -1,7 +1,7 @@
 #include "allocation.h"
 #include <QList>
 
-void FirstFit(Memory &m ,Entity x)
+void Allocation::FirstFit(Memory &m ,Entity x)
 {
     QList<Entity>::iterator it= m.mem.begin();
     for(;it != m.mem.end();++it)
@@ -32,3 +32,7 @@ void FirstFit(Memory &m ,Entity x)
 
 
 }
+//void Allocation::WorstFit(Memory &m ,Entity x)
+//{
+
+//}
