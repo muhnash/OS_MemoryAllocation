@@ -7,9 +7,8 @@
 
 class Allocation
 {
-    friend class Memory;
 public:
-    void FirstFit(Entity x);
+    void FirstFit(Memory &m,Entity x);
     void BestFit(Entity x);
     void WorstFit(Entity x);
 };
