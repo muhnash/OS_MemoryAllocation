@@ -2,7 +2,17 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QList>
+#include <QMainWindow>
+#include <QDialog>
+#include <QtCore>
+#include <QtGui>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsSimpleTextItem>
+#include "memory.h"
+#include "entity.h"
+#include <QMessageBox>
 namespace Ui {
 class MainWindow;
 }
@@ -20,8 +30,15 @@ private slots:
 
     void on_initalize_clicked();
 
+    void on_bestFit_2_clicked();
+
+    void on_insertButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QGraphicsScene *scene;
+    QList <Entity> the_list;
 };
 
 #endif // MAINWINDOW_H
+
