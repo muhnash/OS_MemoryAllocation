@@ -2,13 +2,21 @@
 #include <QList>
 #include <QDebug>
 #include <QString>
-#include<algorithm>
+
 
 using namespace std;
 
-bool higher_address(Entity a,Entity b)
+bool less_address(Entity a,Entity b)
 {
-    if(a.get_base_address() > b.get_base_address())
+    if(a.get_base_address() < b.get_base_address())
+        return true;
+    else
+        return false;
+}
+
+bool less_size(Entity a,Entity b)
+{
+    if(a.get_size() < b.get_size())
         return true;
     else
         return false;

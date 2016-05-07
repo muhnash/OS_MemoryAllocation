@@ -5,6 +5,9 @@
 #include<QList>
 #include "entity.h"
 
+
+bool less_address(Entity a,Entity b);
+bool less_size(Entity a,Entity b);
 class Memory
 {
 
