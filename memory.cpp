@@ -13,10 +13,10 @@ bool higher_address(Entity a,Entity b)
     else
         return false;
 }
-
+/*
 Memory::Memory(QList<Entity> holes)
 {
-    if(holes.empty()) return;
+    if(holes.empty()) {return;}
 
     QList<Entity>::iterator it;
     sort(holes.begin(),holes.end(), higher_address); // sort by addresses
@@ -48,6 +48,7 @@ Memory::Memory(QList<Entity> holes)
 
     }
 }
+*/
 void Memory::remove_entity(QString s)
 {
     // remove process
@@ -112,4 +113,7 @@ void Memory::remove_entity(QString s)
        }
 }
 
-
+void Memory::push_element(Entity x)
+{
+    mem.push_back(x);
+}

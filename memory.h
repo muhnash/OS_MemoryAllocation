@@ -9,9 +9,11 @@ class Memory
 {
 
 private:
-    QList<Entity> mem;
+   //QList<Entity> mem;
 public:
-    Memory(QList<Entity> holes);
+    QList<Entity> mem;
+    void push_element(Entity x);
+   // Memory(QList<Entity> holes);
     void remove_entity(QString s);
    //-------
     friend class Allocation;
