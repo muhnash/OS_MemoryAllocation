@@ -14,6 +14,17 @@ bool less_address(Entity a,Entity b)
         return false;
 }
 
+
+QList<Entity>::iterator prev(QList<Entity>::iterator x)
+{
+    return x--;
+}
+
+QList<Entity>::iterator next(QList<Entity>::iterator x)
+{
+    return x++;
+}
+
 bool less_size(Entity a,Entity b)
 {
     if(a.get_size() < b.get_size())
@@ -22,6 +33,7 @@ bool less_size(Entity a,Entity b)
         return false;
 }
 /*
+>>>>>>> 5aeb2f4115035d8db0e9ad8c901e2e40b1f274ad
 Memory::Memory(QList<Entity> holes)
 {
     if(holes.empty()) {return;}

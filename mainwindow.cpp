@@ -31,3 +31,19 @@ void MainWindow::on_initalize_clicked()
 {
    Memory m(mem) ;
 }
+
+void MainWindow::on_bestFit_2_clicked()
+{
+
+}
+
+void MainWindow::on_insertButton_2_clicked()
+{
+    int x = ui->holesize->text().toInt();
+    int y = ui->holeaddress->text().toInt();
+    Entity temp(false);
+    temp.set_size(x);
+    temp.set_base_address(y);
+    temp.set_type(false);
+    the_list.push_back(temp);
+}

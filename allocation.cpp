@@ -41,7 +41,10 @@ void Allocation::FirstFit(Memory &m ,Entity x)
 //{
 
 //}
+<<<<<<< HEAD
+=======
 
+>>>>>>> a58d8e0d686e2fb067a7587f710692fdfbc1844b
 void Allocation::BestFit(Memory &m,Entity x)
 {
 
